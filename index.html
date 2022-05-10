@@ -24,17 +24,16 @@
     }
 	h1 {
 	  text-align: center;
-	  margin-bottom: -50px;
+	  margin-bottom: 0px;
 	}
-	h2 {
+	h3 {
+	  margin-top: 0px;
 	  margin-bottom: 0px;
 	}
   </style>
 </head>
 <body>
 <h1>Fernwärmeausbauplanung Stadt Göttingen</h1>
-<h2>Wärmedichte/Wärmebedarf</h2>
-<img src="legend.png" height="40">
   <div id="map"></div>
   <script>
       var map = L.map('map').setView([51.54095073541072, 9.929798498128651], 13.0);
@@ -47,5 +46,7 @@
 	  
 	  L.control.scale({position: 'bottomleft', maxWidth: 300, imperial: false}).addTo(map);
   </script>
+<h3>Wärmedichte/Wärmebedarf</h3>
+<img src="legend.png" height="40">
 </body>
 </html>
